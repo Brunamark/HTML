@@ -89,4 +89,17 @@ para fazer um sim e nao que o usuario so seleciona um ou outro, basta colocar o 
     <p>Borda Recheada?</p>
     <input type="radio" name="borda" value="yes">Sim <br>
     <input type="radio" name="borda" value="no">Não <br>
-   
+
+
+select:
+<label>Cargo:</label>
+      <option value="">Selecione o cargo</option>
+        <option value="Administrativo">Administrativo</option>
+        <option value="DevOps">DevOpo</option>
+        <option value="SecOps">SecOps</option>
+        <option value="RH">RH</option>
+    
+    </select>
+Isso significa que o Selecione o cargo vai estar aparecendo para o cliente mas ele so pode enviar o que estiver pre setado como o administrativo, devops e etc na lista que eu criei no select. O atributo multiple muda o formato e adiciona mais objetos da lista criada.
+ (segurando o CTRL).
+  
