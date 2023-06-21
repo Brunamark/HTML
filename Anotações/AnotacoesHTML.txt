@@ -1,0 +1,63 @@
+index.html -> diz respeito a parte principal do programa
+clicando com o botão direito e escolhendo Open with live server, abre o programa html no brownser
+tag i -> italico
+tag strong -> negrito
+<input type = "text" /> -> campo texto para digitar
+<img width =150 src=""/> -> no source colocar o caminho podendo ser daweb ou arquivo local
+small -> tag para texto pequeno
+h1, h2,h3... -> sao tamanhos de letras diferentes 
+<p> ->paragraph
+<blockquote> -> citação 
+mark -> marcatexto
+u -> underline
+ol -> lista ordenada necessita de tags filhas 
+(<ol>
+	<li> Item1 </li>
+	<li> Item2 </li>
+</ol>)
+<ul> -> lista nao ordenada (marcadores): (tambem necessita de tags filhas)
+(<ul>
+	<li> Item1 </li>
+	<li> Item2 </li>
+</ul>)
+<hr /> linha tracada para ficar mais bonita a pagina
+ANCORAGEM{
+o que eh: quando clica no link ele nao sai da pagina mas scrolla ate o link colcoado
+exemplo:
+  <body>
+        <h1><strong> Monte seu Primeiro Dispositivo <strong style="color:rgb(6, 6, 152)">IoT</strong> </strong></h1> 
+        <ul>
+            <li><a href="#Micro">Microcontroladores</a></li>
+        </ul>
+        <h2 id="Micro">Microcontroladores</h2>
+        <p>Para desenvolver o seu primeiro dispositivo IoT e c
+}
+SITE{
+o target self o link abre nele mesmo
+<a href="DIGITE O CAMINHO DO SITE"target="_self">blabla</a> -> adicionando o link e no blabla sera o que vai estar exibindo no site como blablabla e vai estar em link
+para abrir em uma nova aba:
+<a href="DIGITE O CAMINHO DO SITE"target="blank">blabla</a>
+atributo title="clique aquie  confira" -> quando passar o mouse em cima do link, vai estar escrito esse balao
+}
+NAVEGANDO NO PROPRIO SITE{
+crie novo arquivo .html exemplo about.html
+about.html:
+<html>
+    <head>
+        <title id="title">Empresa</title>
+    </head>
+    <body>
+        <h1><strong style="color:blueviolet"> Sobre minha empresa </strong></h1> 
+		<a href="index.html">Voltar</a>
+    </body>
+</html>
+no index, o href sera href="about.html"
+
+}
+
+
+
+Atributo ex: <strong id="titulo"> BLABLABLA </strong> -> serve como se fosse uma variavel que
+em java script sera util para pegar esse elemento e alterar :)
+Atributo ex: <strong style="bodyTitle"> Tags Aprendidas em HTML no meu primeiro site </strong> 
+esse atributo sera muito utilizado em CSS. exemplo de css style="color:purple"
