@@ -61,3 +61,32 @@ Atributo ex: <strong id="titulo"> BLABLABLA </strong> -> serve como se fosse uma
 em java script sera util para pegar esse elemento e alterar :)
 Atributo ex: <strong style="bodyTitle"> Tags Aprendidas em HTML no meu primeiro site </strong> 
 esse atributo sera muito utilizado em CSS. exemplo de css style="color:purple"
+
+
+na tag Form: o atributo action diz respeito aonde serao mandadas essas info (ex: banco de dado). O atributo method pode ser GET ou POST, o GET por exemplo, vai aparecer tudo que voce digitou na barra do site URL mas o metodo POST vai ocultar esses dados na URL do seu site, fazendo que ele mande via body uma requisição para o servidor embutido com as informações. O atributo Target a informação vai tarfgar em outra aba com o _blank. O atributo autocomplete que pode ser ON ou OFF, o ON quando apos completar os espaçoes em branco e recarregar a página, ele vai manter as informações já digitada e o OFF não mantém nada quando recarrega a pagina. O on vai ser usado no javascript mas quando se tem um botao do tipo submit, o onsubmit vai aparecer um alerta no brownser assim que voce executa uma ação assim que apertar o botão.
+
+na tag number pode definir um mininimo e maximo usando min="0" max="100". O step para pular de um numero. exemplo quero de 2 em 2 step ="2"
+
+CHECKBOX:
+	
+<input type="checkbox" name="opcional" value="cebola"> + cebola <br> -> O name quer dizer que vai ser enviado para o servidor o opcional cabola.
+
+no metodo GET se enviar assim:
+ <form method="get">
+    <h2>Você Selecionou: Pizza de Calabresa!</h2>
+    <p>Quais Opcionais você deseja?</p>
+    <input type="checkbox" name="opcional" value="queijo"> + queijo <br>
+    <input type="checkbox" name="opcional" value="calabresa"> + calabresa <br>
+    <input type="checkbox" name="opcional" value="cebola"> + cebola <br>
+    <input type="checkbox" name="opcional" value="milho"> + milho <br>
+
+    </form>
+a variavel opcional sera escrita no servidor como o ultimo valor e portanto sera apenas milho mas se substituir opcional por opcional[] isso sera uma lista e vai conter todos os dados
+
+NO INPUT TYPE RADIO:
+
+para fazer um sim e nao que o usuario so seleciona um ou outro, basta colocar o mesmo name:
+    <p>Borda Recheada?</p>
+    <input type="radio" name="borda" value="yes">Sim <br>
+    <input type="radio" name="borda" value="no">Não <br>
+   
