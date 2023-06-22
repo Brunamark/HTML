@@ -102,4 +102,41 @@ select:
     </select>
 Isso significa que o Selecione o cargo vai estar aparecendo para o cliente mas ele so pode enviar o que estiver pre setado como o administrativo, devops e etc na lista que eu criei no select. O atributo multiple muda o formato e adiciona mais objetos da lista criada.
  (segurando o CTRL).
-  
+
+textarea:
+<label >Mensagem</label>
+    <textarea name="message" ></textarea>
+cria um campo que a pessoa pode digitar mais coisas. Tem atributo rows and cols (linhas e colunas) para definir o seu campo
+
+tag <sup> eh o equivalente a potencia ^. 10^2 10<sup>2</sup> deixa o 2 elevado e menor que a letra
+tag b - deixa em negrito e strong tbm deixa mas semanticamente o strong quer dar + enfase naquela parte do texto
+tag blockquote citacao 
+
+TAGS CORINGAS: <div> e <span>{
+div-> pensa em um retangulo, sendo cada um deles por exmeplo, cabeçalho, conteúdo, referencia..., e dentro desses divs coloca o conteudo, ou seja, uma estruturação do site. Ela nao sera exibida para o usuario mas vai ser algo que delimita , ela eh tag display block(que ocupa a horizontal inteira que esta exibida na pagina)
+span-> igual o div mas ela nao eh display block e eh legal pq pode ir em uma plavra ou um caracter de uma cor especifica.ex:
+<style>
+	span{
+		color: red
+	}
+
+</style>
+<body>
+	<p>Brun<span>a</span> </p>
+</body>
+ou seja, todos os spans vao ser da cor vermelha e a letra A de bruna vai estar vermelha
+
+}
+fieldset -> retangulo ex:
+<fieldset>
+	<ledend> Dados Pessoais</legend>
+	<div class="row">
+		<label>Nome:</label><input type="text"/>
+		<label>E-mail:</label><input type="text">
+  ...
+retangulo escrito com dados pessoais
+inserir video: src=search
+tag <video>
+<video controls autoplay width="400" height="250">
+	<source src="tariler.mp">
+</video>

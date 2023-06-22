@@ -7,16 +7,24 @@
 </head>
 <body>
     <form method="get">
-    <h2>Você Selecionou: Pizza de Calabresa!</h2>
+    <h2> Você Selecionou: <font color="red" face="'Trebuchet MS',Arial">Pizza de Calabresa!</font> </h2>
     <p>Quais Opcionais você deseja?</p>
     <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
     <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+    <input type="checkbox" name="opcional[]" value="bacon"> + bacon <br>
     <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
     <input type="checkbox" name="opcional[]" value="milho"> + milho <br>
     <p>Borda Recheada?</p>
-    <input type="radio" name="" value="yes">Sim <br>
-    <input type="radio" name="" value="no">Não <br>
-
+    <input type="radio" name="borda" value="yes">Sim <br>
+    <input type="radio" name="borda" value="no">Não <br>
+    <p>Bebida</p>
+    <input type="radio" name="bebida" value="suco"> Suco del valle 1L <br>
+    <input type="radio" name="bebida" value="cocaCola"> Coca Cola 1L <br>
+    <input type="radio" name="bebida" value="mateCouro"> Mate Couro 1L <br>
+    <input type="radio" name="bebida" value="pepsi">  Pepsi 1L <br>
+    <input type="radio" name="bebida" value="cerveja"> Cerveja Long Neck <br>
+    <input type="radio" name="bebida" value="none"> Nenhum <br>
+    <button type="submit">Enviar Pedido</button>
     </form>
 </body>
 </html>
