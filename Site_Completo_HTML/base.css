@@ -30,7 +30,7 @@ body {
 }
 .content {
     background-color: #EAECEE;
-    min-height: 300px;
+    min-height: 100px;
     padding: 20px;
 }
 .video-container {

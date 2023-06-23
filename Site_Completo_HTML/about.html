@@ -2,93 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opcionais</title>
+    <title>ANI - Sobre</title>
+    <link rel="stylesheet" href="base.css">
 </head>
-<body >
-       <form method="get">
-    <h2> Você Selecionou: <font color="red" face="'Trebuchet MS',Arial">Pizza de Calabresa!</font> </h2>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/CCke0NvGy70?controls=0&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>Quais Opcionais você deseja?</p>
-    <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
-    <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
-    <input type="checkbox" name="opcional[]" value="bacon"> + bacon <br>
-    <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
-    <input type="checkbox" name="opcional[]" value="milho"> + milho <br>
-    <p>Borda Recheada?</p>
-    <input type="radio" name="borda" value="yes">Sim <br>
-    <input type="radio" name="borda" value="no">Não <br>
-    <p>Bebida</p>
-    <input type="radio" name="bebida" value="suco"> Suco del valle 1L <br>
-    <input type="radio" name="bebida" value="cocaCola"> Coca Cola 1L <br>
-    <input type="radio" name="bebida" value="mateCouro"> Mate Couro 1L <br>
-    <input type="radio" name="bebida" value="pepsi">  Pepsi 1L <br>
-    <input type="radio" name="bebida" value="cerveja"> Cerveja Long Neck <br>
-    <input type="radio" name="bebida" value="none"> Nenhum <br>
-    <button type="submit">Enviar Pedido</button> <br>
-    <img  width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/1200px-IFood_logo.svg.png" ><br>
-      
-        <title>Trabahando com Tabelas</title>
-        <style>
-            table{ /*comando gerado para estilizar a borda atraves do boxshadowcss*/
-                box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
-                -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
-                -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
-            }
-            table thead th{
-                background-color: black;
-                color: aliceblue;
-            }
-            table tfoot td{
-                background-color: grey;
-               
-            }
-            table tbody tr:nth-child(even) td{ /*coloca as linahs pares na cor lightgray*/
-                background-color: lightgray; 
-            }
-            table tbody tr:hover td{
-                background-color: #e9e9e9; /* quando passar o mouse por cima trocara de cor*/
-                cursor:pointer; /*toda vez que passar o mouse na tabela trocara por cursor de mao */
-            }
-        </style> 
-        <table summary="Essa tabela se refere a turma 302" width="250" align="center" cellspacing="0" cellpeding="5"> 
-           
-            <thead>
-                <tr> /*colspan mescla a coluna 1 com a 2 horizontalmente e o rowspan mescal horizontalmente as linhas*/
-                    <th colspan="2">Minha Tabela</th> 
-                </tr> 
-                <tr >
-                    <th title="nome completo">Nome</th>
-                    <th>Idade</th>
-              
-                     
-            </thead>
-            <tbody>
-                <tr id="1">
-                    <td>Bruna</td>
-                    <td>23</td>
-                </tr>       
-                <tr id="2">
-                    <td>Maria</td>
-                    <td>30</td>
-                </tr> 
-                <tr id="3">
-                    <td>Joao</td>
-                    <td>42</td>
-                </tr> 
-                <tr id="4">
-                    <td>Walter</td>
-                    <td>57</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Total</td>
-                    <td>4</td>
-                </tr>
-            </tfoot> 
-           
-        </table>
-     </form>
+<body>
+    
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li style="color:#EAECEE"><a href="index.html"><span style="color:#5BBA08">Página Principal</span></a></li>
+                <li style="color: #EAECEE;"><a href="about.html"><span style="color:#5BBA08;">Sobre a Clínica</span></a></li>
+                <li style="color: #EAECEE;"><a href="service.html"><span style="color:#5BBA08">Horário de Atendimento</span></a></li>
+                <li style="color: #EAECEE;"><a href="contact.html"><span style="color: #5BBA08">Contato</span></a></li>
+            </ul>  
+        </div>
+        <div class="main">
+            <div class="header">
+                <img width="100" display="inline-block" src="https://images.squarespace-cdn.com/content/v1/609ad9f9b8f6540845598912/ad7fe5bb-43b2-4605-82bd-2a3434bcf8a7/BVH_Logo+edit.png" >
+                  <h2 align="middle" display="inline-block" > Clínica <span color style="color:#0080ff ">A</span><span style="color:#724E2F ">N</span><span style="color:#5BBA08 ">I</span></h2>
+            </div>
+    
+            <div class="content">
+                <p> A ANI Clínica Veterinária é referência em medicina veterinária, oferecendo atendimento integral e humanizado aos nossos clientes e seus animais de estimação. Convenientemente localizada no bairro do Morumbi, nosso objetivo é atender a todas as necessidades médicas de cães, gatos e animais silvestres com ética, segurança, carinho e sempre preocupados com o bem estar e qualidade de vida dos animais. Estamos empenhados em realizar o cuidado preventivo, bem como medicina clínica, especialidades, cirúrgias, odontológia, exames e estética animal com uma equipe de profissionais e médicos veterinários qualificados, experientes e em constante atualização para oferecermos sempre o melhor na medicina veterinária em um ambiente confortavel para você e seu pet. </p> 
+                <p> Veja abaixo no mapa aonde estamos localizados e agende a consulta do seu pet:</p>   
+                <div class="mapa-google" align="center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.300258210407!2d-118.34536912437503!3d34.06181647315337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8e0f090f7ef%3A0x967104adb14c8f4d!2s5178%20Wilshire%20Blvd%2C%20Los%20Angeles%2C%20CA%2090036%2C%20EUA!5e0!3m2!1spt-BR!2snl!4v1687529979671!5m2!1spt-BR!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+                  </div>
+    
+            <div class="footer">
+                <div align="center">
+                    <p> <img width="12"  src="https://www.freeiconspng.com/thumbs/telephone-icon/tel-phone-icon-5.png" alt="telefone de contato"> (323) 963-7421<br>
+                    <p> <img width="15" src="https://www.freeiconspng.com/thumbs/location-icon-png/location-icon-24.png" alt="localização da clínica"> 5178 Wilshire Blvd, 90036, Los Angeles<br>
+                    <p> <img width="15" src="https://www.pngmart.com/files/7/Email-PNG-Photo.png" alt="email de contato"> drtaniehuston@ani.com</br>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
