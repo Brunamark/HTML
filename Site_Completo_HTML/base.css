@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: #724E2F;
+    padding: 10px 20px 0px;
+    
+}
+.header {
+    background-color: #EAECEE;
+    min-height: 100px;
+}
+.content {
+    background-color: #EAECEE;
+    min-height: 300px;
+    padding: 20px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção de aspecto de 16:9 (9 dividido por 16 multiplicado por 100) */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer {
+    background-color: #5BBA08;
+    min-height: 150px;
+}
