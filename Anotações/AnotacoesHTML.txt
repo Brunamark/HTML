@@ -1,3 +1,7 @@
+
+Recurso interessante no vscode quando quiser colocar mais de uma tag ex:
+tr>td*2 e enter. Vai criar uma tag tr e dentro dela tuas tags td
+
 index.html -> diz respeito a parte principal do programa
 clicando com o botão direito e escolhendo Open with live server, abre o programa html no brownser
 tag i -> italico
@@ -140,3 +144,163 @@ tag <video>
 <video controls autoplay width="400" height="250">
 	<source src="tariler.mp">
 </video>
+<body stryle="background-color: black">
+TAG IMG{
+<img src="" width="", title="", alt=""> src-> arquivo local ou pagina web; width tamanho; title define o balao quando passa o mouse por cima; alt eh para acessibilidade pra quem deficiencia audiovisual pq o robo le o html para essa pessoa, e no alt voce coloca a escricao detalhada dessa figura. Programa NVDA que eh o robo que le
+imagem .svg nao perde resolucao e a jpg e a mais leve mas o png tem transparencia. O melhor eh pegar o arquivo svg
+}
+
+TAG DE AUDIO(possui peso semantico){
+ <audio controls autoplay> &controls mostra o botao de play e autoplay ele exibe automaticamente o audio no seu site
+        <source src="audio.mp3">
+        Seu navegador nao tem suporte para esse audio!
+    </audio>}
+
+TAG IMG{ SEM IFRAME
+
+
+   <video controls>
+            <source src="clipe.mp4">
+            Seu navegador nao suporta video
+        </video>
+     </form>}
+TAG TRACK{
+alguns arquivos de mp4 geram arquivos .vtt que vao ser as legendas do video
+ARQUIVO .VTT
+ <video controls>
+            <source src="clipe.mp4">
+            <track src="legenda.vtt" kind="descriptions" srclang="en"/>
+            <track default src="legenda-pt-br.vtt" kind="descriptions" srclang="pt-br"/>
+            Seu navegador nao suporta video
+        </video>
+nesse caso o default esta em pt-br, ou seja, o vudeo sera carregado em protugues com as legendas. Alem disso, o kind serve como recurso de acessibilidade para robos e o srclang eh a lingua que esta o video
+}
+TAG IFRAME{
+conteudo externo de site incorporado no nosso codigo
+exemplo: yt com botao direito coloca copiar codigo de incorporacao ou compartilhar e incorporar. No caso do yt voce tem algumas selecoes que pode comecar o video em tal tempo, botao de mostrar ou nao controle do player
+
+}
+
+TABELA{
+TR->table row todas as celulas que compoe a linha e os TD-> colunas ou celulas
+no atributo title em th quando passar o mouse por cima vai aparecer o nome colocado no atributo
+th-> utilizado para o cabecalho da tabela e tbm usado como um recurso de acessibilidade
+summary-> recurso de acessibilidade para saber do que a tabela se trata ou seja, o resumo do que a sua tabela se trata que eh diferente do caption
+tbody-> aonde coloca o corpo da tabela
+thead -> o cabecalho da tabela, no exemplo nome e idade
+tfoot-> rodape da tabela
+caption-> titulo da sua tabela
+botder -> cria borda na nossa tabela
+ <title>Trabahando com Tabelas</title>
+        <style>
+            table tr:nth-child(even){
+                background-color:burlywood; &faz com que a cada 2 linhas fique com a cor burlywood
+            }
+            table tr:hover td{
+                background-color:palevioletred; &quando passar o mouse em cima das linhas vao ficar da cor palevioletred
+            }
+        </style>
+        <table summary="Essa tabela se refere a turma 302" border="1" width="250" align="center"> 
+           <caption>Tabela de idade da turma 302</caption>
+            <thead>
+                <tr >
+                    <th title="nome completo">Nome</th>
+                    <th>Idade</th>
+              
+                    </tr> 
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>Bruna</td>
+                    <td>23</td>
+                </tr>       
+                <tr id="2">
+                    <td>Maria</td>
+                    <td>30</td>
+                </tr> 
+                <tr id="3">
+                    <td>Joao</td>
+                    <td>42</td>
+                </tr> 
+                <tr id="4">
+                    <td>Walter</td>
+                    <td>57</td>
+                </tr>
+                </tbody>
+                    <tr>
+                        <td>Total</td>
+                        <td>4</td>
+                    </tr>
+
+            </tfoot> 
+           
+        </table>
+
+}
+CSS para estilizar melhor a tabela{
+cellspacing =0 tira esacamento entre as celulas
+cellpeding -> separamento da borda
+
+        <title>Trabahando com Tabelas</title>
+        <style>
+            table{ /*comando gerado para estilizar a borda atraves do boxshadowcss*/
+                box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
+                -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
+                -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.53);
+            }
+            table thead th{
+                background-color: black;
+                color: aliceblue;
+            }
+            table tfoot td{
+                background-color: grey;
+               
+            }
+            table tbody tr:nth-child(even) td{ /*coloca as linahs pares na cor lightgray*/
+                background-color: lightgray; 
+            }
+            table tbody tr:hover td{
+                background-color: #e9e9e9; /* quando passar o mouse por cima trocara de cor*/
+                cursor:pointer; /*toda vez que passar o mouse na tabela trocara por cursor de mao */
+            }
+        </style> 
+        <table summary="Essa tabela se refere a turma 302" width="250" align="center" cellspacing="0" cellpeding="5"> 
+           
+            <thead>
+                <tr> /*colspan mescla a coluna 1 com a 2 horizontalmente e o rowspan mescal horizontalmente as linhas*/
+                    <th colspan="2">Minha Tabela</th> 
+                </tr> 
+                <tr >
+                    <th title="nome completo">Nome</th>
+                    <th>Idade</th>
+              
+                     
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>Bruna</td>
+                    <td>23</td>
+                </tr>       
+                <tr id="2">
+                    <td>Maria</td>
+                    <td>30</td>
+                </tr> 
+                <tr id="3">
+                    <td>Joao</td>
+                    <td>42</td>
+                </tr> 
+                <tr id="4">
+                    <td>Walter</td>
+                    <td>57</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot> 
+           
+        </table>
+     </form>
+}
