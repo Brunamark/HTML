@@ -14,3 +14,5 @@ Projetos com HTML.
 [RecursosdeAcessibilidade] (https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 [mdnWebDocs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/main_role)
+
+[Schema.org](https://schema.org/)
