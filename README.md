@@ -12,3 +12,5 @@ Projetos com HTML.
 [BoxShadowGeneratorCSS](https://cssgenerator.org/box-shadow-css-generator.html)
 
 [RecursosdeAcessibilidade] (https://www.w3.org/WAI/standards-guidelines/wcag/)
+
+[mdnWebDocs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/main_role)

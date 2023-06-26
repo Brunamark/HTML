@@ -144,14 +144,15 @@ tag <video>
 <video controls autoplay width="400" height="250">
 	<source src="tariler.mp">
 </video>
-<body stryle="background-color: black">
+<body style="background-color: black">
 TAG IMG{
 <img src="" width="", title="", alt=""> src-> arquivo local ou pagina web; width tamanho; title define o balao quando passa o mouse por cima; alt eh para acessibilidade pra quem deficiencia audiovisual pq o robo le o html para essa pessoa, e no alt voce coloca a escricao detalhada dessa figura. Programa NVDA que eh o robo que le
 imagem .svg nao perde resolucao e a jpg e a mais leve mas o png tem transparencia. O melhor eh pegar o arquivo svg
 }
 
 TAG DE AUDIO(possui peso semantico){
- <audio controls autoplay> &controls mostra o botao de play e autoplay ele exibe automaticamente o audio no seu site
+ <audio controls 
+> &controls mostra o botao de play e autoplay ele exibe automaticamente o audio no seu site
         <source src="audio.mp3">
         Seu navegador nao tem suporte para esse audio!
     </audio>}
@@ -304,3 +305,6 @@ cellpeding -> separamento da borda
         </table>
      </form>
 }
+
+aria-hidden="true" -> fica escondido na acessibilidade e nao le aquela parte do codigo
+
