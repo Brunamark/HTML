@@ -10,3 +10,5 @@ Projetos com HTML.
 [w3schools](https://www.w3schools.com/html/)
 
 [BoxShadowGeneratorCSS](https://cssgenerator.org/box-shadow-css-generator.html)
+
+[RecursosdeAcessibilidade] (https://www.w3.org/WAI/standards-guidelines/wcag/)
