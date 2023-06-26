@@ -307,4 +307,15 @@ cellpeding -> separamento da borda
 }
 
 aria-hidden="true" -> fica escondido na acessibilidade e nao le aquela parte do codigo
+section-> seção relacionada ao tema principa: ex: buscar casas para alugar e cada casa é uma setcion então pode ser usada varias vezes no main
+Aside -> o assunto que não tem a ver com o assunto principal. Ex: falar com a corretora para aluguel daquele imovel
+nav-> itens de naveção e geralmente utilzia em uma lista nao ordenada
 
+figure-> delimita um escopo de uma figura. dentro dela vem uma <img>, <figcaption> (descrição)
+picture-> ele tbm delimita um escopo de uma figura mas a diferença é que pode colocar multiplas fontes para uma mesma imagemÇ ExÇ
+{
+<picture>
+ 	<cource src="car-small.jpg" media="(min-width: 600px)"/>
+	<img src="car-medium.jpg"/>/* Caso a largura da tela for menor, troca  aimagem*/
+/*de acordo com a resolucao da tela consegue c arregar varias imagens*/
+}
