@@ -319,3 +319,77 @@ picture-> ele tbm delimita um escopo de uma figura mas a diferença é que pode 
 	<img src="car-medium.jpg"/>/* Caso a largura da tela for menor, troca  aimagem*/
 /*de acordo com a resolucao da tela consegue c arregar varias imagens*/
 }
+
+datalist-> diferente do select option que aparece um retangulo que vai ter as opcoes e selecioanr, o datalist vai aparecer um balaozinho com as opcoes. Bom para colocar buscas sugeridas. Favor testar o codigo abaixo:{
+ <input list="browsers" type="search" name="search"/>
+    <datalist id="browsers">
+        <option value="">Selecione um navegador</option>
+        <option >Google Chrome</option>
+        <option >Firefox</option>
+        <option >Microsoft Edge</option>
+        <option >Opera</option>
+        <option >Brave</option>
+        <datalist>
+
+    <select name="browsers" id="">
+        <option value="">Selecione um navegador</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="opera">Opera</option>
+        <option value="brave">Brave</option>
+    </select>
+}
+kbd-> muda a fonte para do tipo monoespaçada para input e code para comandos css. O pre ja coloca automaticamente em monospace e borda{
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        kbd{
+            border:solid 1px black; /* cria um triangulo */
+        }
+        code{
+            background-color: #f1f1f1;
+            color: red;
+        }
+        pre{
+            background-color: #f1f1f1;
+        }
+        pre>code{
+            background-color: red;
+        }
+        pre>p{
+            font-style: italic;
+            color:grey
+        }
+    </style>
+
+</head>
+<body>
+   <p>Para copiar esta info pressione <kbd>CTRL</kbd>  + <kbd>C</kbd> </p>
+   <p>Para trocar o fundo da imagem usa-se <code>background-color</code></p>
+   <p>Comando completo para alterar a cor de fundo:</p>
+   <pre>
+        <p>//Neste momento voce aplica desta forma</p>
+            code{
+                background-color: #f1f1f1;
+                color: red;
+            }
+   </pre>
+</body>
+</html>
+}
+
+details-> tem uma setinha que quando clica, mostra o texto que voce quer:{
+<body>
+    <details>
+        <summary>como troco a cor de fundo de um elemento no HTML?</summary>
+        <p>Para executar esta acao, utilize o comando <code>background-color</code> no CSS</p>
+    </details>
+</body>
+}
