@@ -1,4 +1,4 @@
-
+SHIFT + ALT + F -> identacao
 Recurso interessante no vscode quando quiser colocar mais de uma tag ex:
 tr>td*2 e enter. Vai criar uma tag tr e dentro dela tuas tags td
 
